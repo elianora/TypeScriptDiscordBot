@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.app.json",
+  "exclude": [".build", ".test", "node_modules", "webpack"],
+  "compilerOptions": {
+    "outDir": "./.test",
+    "types": ["jest", "node"]
+  }
+}

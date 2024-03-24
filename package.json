@@ -1,0 +1,46 @@
+{
+  "name": "never-an-option-bot",
+  "version": "0.1.0",
+  "description": "A general-purpose Discord bot designed for testing various bot code.",
+  "main": "src/main.ts",
+  "scripts": {
+    "clean": "rimraf ./.build && rimraf ./.test",
+    "build": "npm run lint && tsc --build tsconfig.app.json tsconfig.spec.json --incremental",
+    "lint": "eslint ./ --ext .ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.lytestream.com:elianora/never-an-option-bot.git"
+  },
+  "author": "Elianora Isabelle Rose",
+  "license": "MIT",
+  "dependencies": {
+    "class-validator": "^0.12.2",
+    "discord.js": "^12.5.1",
+    "inversify": "^5.0.1",
+    "reflect-metadata": "^0.1.13",
+    "source-map-support": "^0.5.19"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.0",
+    "@types/jest": "^26.0.16",
+    "@types/node": "^14.14.10",
+    "@types/ws": "^7.4.0",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint": "^7.15.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-no-loops": "^0.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.0",
+    "typescript": "^4.1.2"
+  }
+}
